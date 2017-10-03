@@ -20,3 +20,12 @@ Each sentence is assigned a weight equal to the sum of weights of the words.
 Once all sentences are weighted, they are sorted in descending order of their weights. A certain threshold is set on the weight of a sentence that can be in a summary and then the sentences are filtered.
 The filtered sentences are put in the original order as they appear in the document. This approach is a statistical method that purely relies on term level content of the story. This method involves preprocessing on terms like removing stop words, normalizing terms, replacing synonyms etc.
 
+
+2.	Automatic Summary Extraction based on user query [3]: This approach performs weighting of sentences based on the incoming user query. The weight of sentence is calculated using a mixture of 2 parameters. 
+
+First, the weight of sentence obtained by tf-idf weighting. 
+
+Second, the weight of query calculated using number of sentences the query occurs in. 
+
+The combination of these 2 retrieves important phrases in the story relevant to the user query. This finds applications in creating a story search engine where a user can query for a story subject like “student wizard magic potions” and the search engine would present books like Harry Potter with a summary of the books extracted using this query. This will present the user with relevant stories and the part of the stories they are interested in.
+
