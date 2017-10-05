@@ -1,11 +1,11 @@
-# Text Summarizer
+# [Text Summarizer](https://en.wikipedia.org/wiki/Automatic_summarization)
 
 ## Description
 Text Summary tool - a project which was part of Artificial Intelligence course at BITS Pilani 
 
 ## Algorithms
 
-### 1.	Automatic extraction based on weighting
+### 1.	[Automatic extraction based on weighting](http://research.nii.ac.jp/ntcir/workshop/OnlineProceedings3/NTCIR3-TSC-SekiY.pdf)
 This approach treats sentences as ordered sequences and words as ordered sequences within sentences. It follows four fundamental steps:
 
 o	Weighting of words
@@ -24,7 +24,7 @@ Once all sentences are weighted, they are sorted in descending order of their we
 The filtered sentences are put in the original order as they appear in the document. This approach is a statistical method that purely relies on term level content of the story. This method involves preprocessing on terms like removing stop words, normalizing terms, replacing synonyms etc.
 
 
-### 2.	Automatic Summary Extraction based on user query
+### 2.	[Automatic Summary Extraction based on user query](http://ieeexplore.ieee.org/document/5270475/?reload=true)
 This approach performs weighting of sentences based on the incoming user query. The weight of sentence is calculated using a mixture of 2 parameters. 
 
 First, the weight of sentence obtained by tf-idf weighting. 
